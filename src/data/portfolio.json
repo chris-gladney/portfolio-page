@@ -1,0 +1,20 @@
+{
+  "NC-News": {
+    "type": "full-stack",
+    "hosted": "https://nc-news-chrisgladney.netlify.app",
+    "github": "https://github.com/chris-gladney/nc-news",
+    "tech": ["javascript", "express", "sql", "react"]
+  },
+  "NC-News-endpoints": {
+    "type": "backend",
+    "hosted": "https://chris-reddit.onrender.com/api",
+    "github": "https://github.com/chris-gladney/cg-server",
+    "tech": ["javascript", "express", "sql"]
+  },
+  "Lockout-Labyrinth": {
+    "type": "full-stack",
+    "hosted": "",
+    "github": "https://github.com/chris-gladney/AppBlocker",
+    "tech": ["typescript", "mongodb", "express", "electron", "react"]
+  }
+}
