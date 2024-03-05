@@ -1,27 +1,10 @@
-import { Link } from "react-router-dom";
+import Nav from "./Nav";
 
 function Contact() {
   return (
     <>
-      <ul className="navigation">
-        <li className="link">
-          <Link to="/contact" className="contact">
-            Contact
-          </Link>
-        </li>
-        <li className="link">
-          <Link to="/portfolio" className="portfolio">
-            Portfolio
-          </Link>
-        </li>
-        <li className="link">
-          <Link to="/" className="about">
-            About
-          </Link>
-        </li>
-      </ul>
+      <Nav />
       <h1>Chris Gladney</h1>
-
     </>
   );
 }

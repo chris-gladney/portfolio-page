@@ -4,28 +4,12 @@ import sql from "../src/assets/sql.png";
 import mongodb from "../src/assets/mongodb.png";
 import node from "../src/assets/node.png";
 import electron from "../src/assets/electron.png";
-import { Link } from "react-router-dom";
+import Nav from "./Nav";
 
 function Overview() {
   return (
     <>
-      <ul className="navigation">
-        <li className="link">
-          <Link to="/contact" className="contact">
-            Contact
-          </Link>
-        </li>
-        <li className="link">
-          <Link to="/portfolio" className="portfolio">
-            Portfolio
-          </Link>
-        </li>
-        <li className="link">
-          <Link to="/" className="about">
-            About
-          </Link>
-        </li>
-      </ul>
+      <Nav />
       <h1 className="name">Chris Gladney</h1>
       <div className="biography">
         <p>

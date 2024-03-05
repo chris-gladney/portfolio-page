@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import portfolio from "./data/portfolio.json";
+import Nav from "./Nav";
 
 function Portfolio() {
   const [projects, setProjects] = useState<object>({});
@@ -11,23 +11,7 @@ function Portfolio() {
 
   return (
     <>
-      <ul className="navigation">
-        <li className="link">
-          <Link to="/contact" className="contact">
-            Contact
-          </Link>
-        </li>
-        <li className="link">
-          <Link to="/portfolio" className="portfolio">
-            Portfolio
-          </Link>
-        </li>
-        <li className="link">
-          <Link to="/" className="about">
-            About
-          </Link>
-        </li>
-      </ul>
+      <Nav />
       <h1 className="name">Chris Gladney</h1>
       {Object.keys(projects).map((project) => {
         return (
