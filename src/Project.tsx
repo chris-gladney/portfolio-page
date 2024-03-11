@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 interface Project {
   project: string;
-  projectObject: object;
+  projectObject: any;
 }
 
 function Project(props: Project) {

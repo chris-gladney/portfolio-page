@@ -4,7 +4,7 @@ import Nav from "./Nav";
 import Project from "./Project";
 
 function Portfolio() {
-  const [projects, setProjects] = useState<object>({});
+  const [projects, setProjects] = useState<any>({});
 
   useEffect(() => {
     setProjects(portfolio);
