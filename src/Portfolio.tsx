@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import portfolio from "./data/portfolio.json";
 import Nav from "./Nav";
+import Project from "./Project";
 
 function Portfolio() {
   const [projects, setProjects] = useState<object>({});
@@ -11,42 +12,21 @@ function Portfolio() {
 
   return (
     <>
-      <Nav />
-      <h1 className="name">Chris Gladney</h1>
-      {Object.keys(projects).map((project) => {
-        return (
-          <div className="project" key={project}>
-            <h2>{project}</h2>
-            <ul className="projects-list">
-              <li>
-                Type:
-                {
-                  //@ts-ignore
-                  projects[project].type
-                }
-              </li>
-              <br />
-              {
-                //@ts-ignore
-                projects[project].hosted
-                  ? //@ts-ignore
-                    `Hosted: ${projects[project].hosted}`
-                  : ""
-              }
-              <br />
-              <li>
-                Github:
-                {
-                  //@ts-ignore
-                  projects[project].github
-                }
-              </li>
-              <br />
-              <li></li>
-            </ul>
-          </div>
-        );
-      })}
+      <div className="main-content">
+        <Nav />
+        <h1 className="name">Chris Gladney</h1>
+        <div className="projects">
+          {Object.keys(projects).map((project) => {
+            return (
+              <Project
+                key={project}
+                project={project}
+                projectObject={projects[project]}
+              />
+            );
+          })}
+        </div>
+      </div>
     </>
   );
 }

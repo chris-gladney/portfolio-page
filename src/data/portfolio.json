@@ -3,18 +3,21 @@
     "type": "full-stack",
     "hosted": "https://nc-news-chrisgladney.netlify.app",
     "github": "https://github.com/chris-gladney/nc-news",
-    "tech": ["javascript", "express", "sql", "react"]
+    "tech": ["javascript", "express", "sql", "react"],
+    "description": "A reddit style news app that allows users to view and interact with others users' posts."
   },
   "NC-News-endpoints": {
     "type": "backend",
     "hosted": "https://chris-reddit.onrender.com/api",
     "github": "https://github.com/chris-gladney/cg-server",
-    "tech": ["javascript", "express", "sql"]
+    "tech": ["javascript", "express", "sql"],
+    "description": "The backend system for a reddit style news application, containing the endpoints for the front-end of the app."
   },
   "Lockout-Labyrinth": {
     "type": "full-stack",
     "hosted": "",
     "github": "https://github.com/chris-gladney/AppBlocker",
-    "tech": ["typescript", "mongodb", "express", "electron", "react"]
+    "tech": ["typescript", "mongodb", "express", "electron", "react"],
+    "description": "An electron app designed around productivity. It blocks access to chosen distracting websites so that the user can concentrate on work."
   }
 }
