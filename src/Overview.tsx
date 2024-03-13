@@ -1,12 +1,12 @@
-import javaScript from "../src/assets/javascript.png";
-import typeScript from "../src/assets/typescript.png";
-import sql from "../src/assets/sql.png";
-import mongodb from "../src/assets/mongodb.png";
-import node from "../src/assets/node.png";
-import electron from "../src/assets/electron.png";
+import javaScript from "../public/assets/javascript.png";
+import typeScript from "../public/assets/typescript.png";
+import sql from "../public/assets/sql.png";
+import mongodb from "../public/assets/mongodb.png";
+import node from "../public/assets/node.png";
+import electron from "../public/assets/electron.png";
 import Nav from "./Nav";
-import reactPNG from "../src/assets/react.png";
-import express from "../src/assets/express.png";
+import reactPNG from "../public/assets/react.png";
+import express from "../public/assets/express.png";
 
 function Overview() {
   return (

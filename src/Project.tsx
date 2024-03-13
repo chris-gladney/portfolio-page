@@ -33,16 +33,23 @@ function Project(props: Project) {
       <div className="project-info">
         <h2>{props.project}</h2>
         <p>{props.projectObject.type}</p>
-        <h3>{props.projectObject.description}</h3>
+        <p>
+          {props.projectObject.description}
+          <br />
+          Github: {props.projectObject.github}
+          <br />
+          {props.projectObject.hosted ? `Hosted: ${props.projectObject.hosted}` : ""}
+        </p>
         {technologies.map((tech) => {
           return (
             <img
-              src={`${__dirname}../src/assets/${tech}.png`}
+              src={`../public/assets/${tech}.png`}
               key={tech}
               className="tech-stack"
             />
           );
         })}
+        <br />
         <button
           className="details"
           onClick={() => {

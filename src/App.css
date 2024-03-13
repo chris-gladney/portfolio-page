@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
 
 #root {
-  margin: auto;
-  height: 100vh;
+  margin: 0 auto;
+  height: 100%;
   width: 100vw;
   text-align: center;
   background-image: url("./assets/background.png");
+  background-attachment: fixed;
 }
 
 * {
@@ -23,7 +24,7 @@ body {
 .tech-stacks {
   display: flex;
   height: 60px;
-  width: 100%;
+  width: 66.666666666%;
   margin: auto;
   justify-content: space-between;
 }
@@ -102,12 +103,14 @@ li a:hover {
 .details {
   background-color: black;
   color: white;
+  width: 100%;
 }
 
 .main-content {
   background-color: #ffffff;
   width: 66.666666666%;
   margin: 0 auto;
+  overflow: auto;
 }
 
 .projects {
