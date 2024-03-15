@@ -12,7 +12,7 @@ function Portfolio() {
 
   return (
     <>
-      <div className="main-content">
+      <div className="main-content portfolio">
         <Nav />
         <h1 className="name">Chris Gladney</h1>
         <div className="projects">

@@ -43,7 +43,7 @@ function Project(props: Project) {
         {technologies.map((tech) => {
           return (
             <img
-              src={`../public/assets/${tech}.png`}
+              src={`/assets/${tech}.png`}
               key={tech}
               className="tech-stack"
             />
