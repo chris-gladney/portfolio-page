@@ -23,6 +23,7 @@ body {
 
 .tech-stacks {
   display: flex;
+  flex-wrap: wrap;
   height: 60px;
   width: 66.666666666%;
   margin: auto;
@@ -31,7 +32,7 @@ body {
 
 .tech-stack {
   flex: 1;
-  width: 50px;
+  max-width: 50px;
   padding: 10px;
 }
 
@@ -66,13 +67,15 @@ li a:hover {
 }
 
 .biography {
-  width: 66.66666%;
+  width: 100%;
+  padding: 50px;
   text-align: center;
   margin: auto;
 }
 
 .biography p {
   text-align: left;
+  max-width: 80%;
 }
 
 .project {
@@ -108,10 +111,10 @@ li a:hover {
 
 .main-content {
   background-color: #ffffff;
-  width: 66.666666666%;
+  max-width: 66.666666666%;
   margin: 0 auto;
   overflow: auto;
-  height: 100%;
+  max-height: 100%;
 }
 
 .projects {
